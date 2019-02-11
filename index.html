@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Celsius to Fahrenheit</title>
+		<!--<script src="myJavaScript.js"></script>-->
+		<link rel="stylesheet" href="main.css">
+		<script>
+			function Celsius(){
+					
+					var fahr = parseInt(prompt("Enter The Celsius Temperature"));
+					fahr = (9/5) * fahr+ 32;
+					
+					if(fahr < 0)
+					{
+						var result = (fahr.toString());
+						result2 = (result.fontcolor("blue"));
+						document.write("Fehrenhite temperature is "+ result2);
+					}
+					else if(fahr == 0)
+					{
+						var result = (fahr.toString());
+						result2 = (result.fontcolor("red"));
+						document.write("Fehrenhite temperature is "+ result2);
+					}
+					else
+					{
+						
+						document.write("Fehrenhite temperature is "+ fahr);
+						
+					}
+		
+				}
+				
+				function Fehrenhite(){
+					var cels = parseInt(prompt("Enter The Fehrenhite Temperature"));
+					cels = (5.0/9.0)*(cels - 32);
+					if(cels < 0)
+					{
+						var result = (cels.toString());
+						result2 = (result.fontcolor("blue"));
+						document.write("Celsius temperature is "+ result2);
+					}
+					else if(cels == 0)
+					{
+						var result = (cels.toString());
+						result2 = (result.fontcolor("red"));
+						document.write("Celsius temperature is "+ result2);
+					}
+					else
+					{
+						
+						document.write("Celsius temperature is "+ cels);
+						
+					}
+				}
+		</script>
+	</head>
+	<body>
+		<section>
+			<h1>Temperature Converter</h1><br><br>
+			<p>Please choose the button to convert</p><br><br><br><br>
+		</section>
+		<main>
+			<fieldset>
+			<legend>Temperature Converter</legend><br><br>
+		<input type="button" onclick="Fehrenhite();" value=" Fehrenhite" id="button1"><br><br>
+		<input type="button" onclick="Celsius();" value="Celsius" id="button">
+			</fieldset>
+		</main>
+
+	</body>
+</html>
